@@ -6,7 +6,6 @@ int player = 1;
 int position = 0;
 
 void introduction() {
-
   std::cout << "press [enter] to begin game: ";
   std::cin.ignore();
   std::cout << "\n";
@@ -99,7 +98,6 @@ void check_taken(){
   }
 }
 
-
 // asks user's input for turn placement and checks if number is on board and if spot on board is taken
 void set_position() {
   std::cout << "player " << player << "'s turn [enter #1-9]: ";
@@ -107,8 +105,6 @@ void set_position() {
   check_taken();
   std::cout << "\n";
 }
-
-
 
 // updates the game board based on the current player's move
 void update_board() {
